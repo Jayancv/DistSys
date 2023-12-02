@@ -1,6 +1,3 @@
-/* 
- * <Paste your header here>
- */
 package org.uoh.distributed.peer;
 
 import javax.xml.bind.annotation.XmlRootElement;

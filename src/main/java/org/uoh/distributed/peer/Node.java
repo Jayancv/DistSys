@@ -114,7 +114,7 @@ public class Node
         configure();
         state.setState( NodeState.CONFIGURED );
 
-        // TODO: 10/24/17 Periodic synchronization
+        // TODO: Periodic synchronization
         /*
          * 1. Find 2 predecessors of mine.
          * 2. Then periodically ping them and synchronize with their entry tables.
@@ -257,7 +257,7 @@ public class Node
     public void updateRoutingTable( Set<RoutingTableEntry> entries )
     {
         logger.debug( "Adding routing table entries -> {}", entries );
-        // TODO: 11/2/17 Should we sync? Remove what is not present?
+        // Should we sync? Remove what is not present?
         entries.forEach( routingTable::addEntry );
     }
 
